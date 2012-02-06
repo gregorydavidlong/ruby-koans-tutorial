@@ -23,7 +23,7 @@ class AboutHashes < EdgeCase::Koan
   def test_accessing_hashes_with_fetch
     hash = { :one => "uno" }
     assert_equal "uno", hash.fetch(:one)
-    assert_raise(IndexError) do
+    assert_raise(KeyError) do
       hash.fetch(:doesnt_exist)
     end
 
@@ -110,8 +110,8 @@ class AboutHashes < EdgeCase::Koan
     hash[:one] << "uno"
     hash[:two] << "dos"
 
-    assert_equal ["uno", "dos"], hash[:one]
-    assert_equal ["uno", "dos"], hash[:two]
-    assert_equal ["uno", "dos"], hash[:three]
+    assert_equal ["uno"], hash[:one]
+    assert_equal ["dos"], hash[:two]
+    assert_equal [], hash[:three]
   end
 end

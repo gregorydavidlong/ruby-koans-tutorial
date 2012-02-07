@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class AboutJavaInterop - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>about_java_interop.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="EdgeCase/Koan.html">EdgeCase::Koan</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-test_also_java_class_can_be_given_ruby_aliases">#test_also_java_class_can_be_given_ruby_aliases</a>
+    
+    <li><a href="#method-i-test_can_directly_call_java_methods_on_java_objects">#test_can_directly_call_java_methods_on_java_objects</a>
+    
+    <li><a href="#method-i-test_however_most_methods_returning_strings_return_ruby_strings">#test_however_most_methods_returning_strings_return_ruby_strings</a>
+    
+    <li><a href="#method-i-test_include_class_includes_class_in_module_scope">#test_include_class_includes_class_in_module_scope</a>
+    
+    <li><a href="#method-i-test_java_class_are_open_from_ruby">#test_java_class_are_open_from_ruby</a>
+    
+    <li><a href="#method-i-test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax">#test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax</a>
+    
+    <li><a href="#method-i-test_java_collections_are_enumerable">#test_java_collections_are_enumerable</a>
+    
+    <li><a href="#method-i-test_java_string_are_not_ruby_strings">#test_java_string_are_not_ruby_strings</a>
+    
+    <li><a href="#method-i-test_java_strings_can_be_compared_to_ruby_strings_maybe">#test_java_strings_can_be_compared_to_ruby_strings_maybe</a>
+    
+    <li><a href="#method-i-test_jruby_provides_question_mark_versions_of_boolean_methods">#test_jruby_provides_question_mark_versions_of_boolean_methods</a>
+    
+    <li><a href="#method-i-test_jruby_provides_snake_case_versions_of_java_methods">#test_jruby_provides_snake_case_versions_of_java_methods</a>
+    
+    <li><a href="#method-i-test_some_ruby_objects_are_not_coerced_to_what_you_might_expect">#test_some_ruby_objects_are_not_coerced_to_what_you_might_expect</a>
+    
+    <li><a href="#method-i-test_some_ruby_objects_can_be_coerced_to_java">#test_some_ruby_objects_can_be_coerced_to_java</a>
+    
+    <li><a href="#method-i-test_using_a_java_library_class">#test_using_a_java_library_class</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./GREED_RULES_txt.html">GREED_RULES</a>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+    <li class="file"><a href="./example_file_txt.html">example_file</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./AboutClasses.html">AboutClasses</a>
+  
+    <li><a href="./AboutClasses/Dog.html">AboutClasses::Dog</a>
+  
+    <li><a href="./AboutClasses/Dog2.html">AboutClasses::Dog2</a>
+  
+    <li><a href="./AboutClasses/Dog3.html">AboutClasses::Dog3</a>
+  
+    <li><a href="./AboutClasses/Dog4.html">AboutClasses::Dog4</a>
+  
+    <li><a href="./AboutClasses/Dog5.html">AboutClasses::Dog5</a>
+  
+    <li><a href="./AboutClasses/Dog6.html">AboutClasses::Dog6</a>
+  
+    <li><a href="./AboutClasses/Dog7.html">AboutClasses::Dog7</a>
+  
+    <li><a href="./AboutConstants.html">AboutConstants</a>
+  
+    <li><a href="./AboutConstants/Animal.html">AboutConstants::Animal</a>
+  
+    <li><a href="./AboutConstants/Animal/NestedAnimal.html">AboutConstants::Animal::NestedAnimal</a>
+  
+    <li><a href="./AboutConstants/MyAnimals.html">AboutConstants::MyAnimals</a>
+  
+    <li><a href="./AboutConstants/MyAnimals/Bird.html">AboutConstants::MyAnimals::Bird</a>
+  
+    <li><a href="./AboutConstants/MyAnimals/Oyster.html">AboutConstants::MyAnimals::Oyster</a>
+  
+    <li><a href="./AboutConstants/Reptile.html">AboutConstants::Reptile</a>
+  
+    <li><a href="./AboutScope.html">AboutScope</a>
+  
+    <li><a href="./AboutScope/Jims.html">AboutScope::Jims</a>
+  
+    <li><a href="./AboutScope/Jims/Dog.html">AboutScope::Jims::Dog</a>
+  
+    <li><a href="./AboutScope/Joes.html">AboutScope::Joes</a>
+  
+    <li><a href="./AboutScope/Joes/Dog.html">AboutScope::Joes::Dog</a>
+  
+    <li><a href="./AboutScope/String.html">AboutScope::String</a>
+  
+    <li><a href="./AboutInheritance.html">AboutInheritance</a>
+  
+    <li><a href="./AboutInheritance/BullDog.html">AboutInheritance::BullDog</a>
+  
+    <li><a href="./AboutInheritance/Chihuahua.html">AboutInheritance::Chihuahua</a>
+  
+    <li><a href="./AboutInheritance/Dog.html">AboutInheritance::Dog</a>
+  
+    <li><a href="./AboutInheritance/GreatDane.html">AboutInheritance::GreatDane</a>
+  
+    <li><a href="./AboutMessagePassing.html">AboutMessagePassing</a>
+  
+    <li><a href="./AboutMessagePassing/AllMessageCatcher.html">AboutMessagePassing::AllMessageCatcher</a>
+  
+    <li><a href="./AboutMessagePassing/MessageCatcher.html">AboutMessagePassing::MessageCatcher</a>
+  
+    <li><a href="./AboutMessagePassing/TypicalObject.html">AboutMessagePassing::TypicalObject</a>
+  
+    <li><a href="./AboutMessagePassing/WellBehavedFooCatcher.html">AboutMessagePassing::WellBehavedFooCatcher</a>
+  
+    <li><a href="./EdgeCase.html">EdgeCase</a>
+  
+    <li><a href="./EdgeCase/Color.html">EdgeCase::Color</a>
+  
+    <li><a href="./EdgeCase/Koan.html">EdgeCase::Koan</a>
+  
+    <li><a href="./EdgeCase/Sensei.html">EdgeCase::Sensei</a>
+  
+    <li><a href="./EdgeCase/ThePath.html">EdgeCase::ThePath</a>
+  
+    <li><a href="./AboutClassMethods.html">AboutClassMethods</a>
+  
+    <li><a href="./AboutClassMethods/Dog.html">AboutClassMethods::Dog</a>
+  
+    <li><a href="./AboutClassMethods/Dog2.html">AboutClassMethods::Dog2</a>
+  
+    <li><a href="./AboutClassMethods/Dog.html">AboutClassMethods::LastExpressionInClassStatement</a>
+  
+    <li><a href="./AboutJavaInterop.html">AboutJavaInterop</a>
+  
+    <li><a href="./AboutJavaInterop/Java.html">AboutJavaInterop::Java</a>
+  
+    <li><a href="./AboutJavaInterop/Java/JavaUtil.html">AboutJavaInterop::Java::JavaUtil</a>
+  
+    <li><a href="./AboutJavaInterop/Java/JavaUtil/ArrayList.html">AboutJavaInterop::Java::JavaUtil::ArrayList</a>
+  
+    <li><a href="./AboutModules.html">AboutModules</a>
+  
+    <li><a href="./AboutModules/Dog.html">AboutModules::Dog</a>
+  
+    <li><a href="./AboutModules/Nameable.html">AboutModules::Nameable</a>
+  
+    <li><a href="./AboutToStr.html">AboutToStr</a>
+  
+    <li><a href="./AboutToStr/CanBeTreatedAsString.html">AboutToStr::CanBeTreatedAsString</a>
+  
+    <li><a href="./AboutToStr/CanNotBeTreatedAsString.html">AboutToStr::CanNotBeTreatedAsString</a>
+  
+    <li><a href="./AboutExceptions.html">AboutExceptions</a>
+  
+    <li><a href="./AboutExceptions/MySpecialError.html">AboutExceptions::MySpecialError</a>
+  
+    <li><a href="./AboutMethods.html">AboutMethods</a>
+  
+    <li><a href="./AboutMethods/Dog.html">AboutMethods::Dog</a>
+  
+    <li><a href="./AboutOpenClasses.html">AboutOpenClasses</a>
+  
+    <li><a href="./AboutOpenClasses/Dog.html">AboutOpenClasses::Dog</a>
+  
+    <li><a href="./Autotest.html">Autotest</a>
+  
+    <li><a href="./Autotest/Rubykoan.html">Autotest::Rubykoan</a>
+  
+    <li><a href="./AboutArrayAssignment.html">AboutArrayAssignment</a>
+  
+    <li><a href="./AboutArrays.html">AboutArrays</a>
+  
+    <li><a href="./AboutAsserts.html">AboutAsserts</a>
+  
+    <li><a href="./AboutBlocks.html">AboutBlocks</a>
+  
+    <li><a href="./AboutControlStatements.html">AboutControlStatements</a>
+  
+    <li><a href="./AboutDiceProject.html">AboutDiceProject</a>
+  
+    <li><a href="./AboutHashes.html">AboutHashes</a>
+  
+    <li><a href="./AboutIteration.html">AboutIteration</a>
+  
+    <li><a href="./AboutNil.html">AboutNil</a>
+  
+    <li><a href="./AboutObjects.html">AboutObjects</a>
+  
+    <li><a href="./AboutProxyObjectProject.html">AboutProxyObjectProject</a>
+  
+    <li><a href="./AboutRegularExpressions.html">AboutRegularExpressions</a>
+  
+    <li><a href="./AboutSandwichCode.html">AboutSandwichCode</a>
+  
+    <li><a href="./AboutScoringProject.html">AboutScoringProject</a>
+  
+    <li><a href="./AboutStrings.html">AboutStrings</a>
+  
+    <li><a href="./AboutSymbols.html">AboutSymbols</a>
+  
+    <li><a href="./AboutTriangleProject.html">AboutTriangleProject</a>
+  
+    <li><a href="./AboutTriangleProject2.html">AboutTriangleProject2</a>
+  
+    <li><a href="./AboutTrueAndFalse.html">AboutTrueAndFalse</a>
+  
+    <li><a href="./ArrayTest.html">ArrayTest</a>
+  
+    <li><a href="./FillMeInError.html">FillMeInError</a>
+  
+    <li><a href="./Integer.html">Integer</a>
+  
+    <li><a href="./KeyError.html">KeyError</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Proxy.html">Proxy</a>
+  
+    <li><a href="./String.html">String</a>
+  
+    <li><a href="./Television.html">Television</a>
+  
+    <li><a href="./TelevisionTest.html">TelevisionTest</a>
+  
+    <li><a href="./TestSomething.html">TestSomething</a>
+  
+    <li><a href="./TriangleError.html">TriangleError</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class AboutJavaInterop</h1>
+
+  <div id="description" class="description">
+    
+<p>Concepts</p>
+<ul><li>
+<p>Pull in a java class</p>
+</li><li>
+<p>calling a method, Camel vs snake</p>
+</li><li>
+<p>Resolving module/class name conflicts</p>
+</li><li>
+<p>Showing what gets returned</p>
+</li><li>
+<p>Ruby Strings  VS <a href="AboutJavaInterop/Java.html">Java</a> Strings</p>
+</li><li>
+<p>Calling custom java class</p>
+</li><li>
+<p>Calling Ruby from java???</p>
+</li></ul>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="JString">JString
+        
+        <dd class="description"><p>THINK ABOUT IT:</p>
+
+<p>What if we use:</p>
+
+<pre>include_class &quot;java.lang.String&quot;</pre>
+
+<p>What would be the value of the <a href="String.html">String</a> constant
+after this include_class is run?  Would it be useful to provide a way of
+aliasing java classes to different names?</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-test_also_java_class_can_be_given_ruby_aliases" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_also_java_class_can_be_given_ruby_aliases</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_also_java_class_can_be_given_ruby_aliases-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_also_java_class_can_be_given_ruby_aliases</span>
+  <span class="ruby-identifier">java_string</span> = <span class="ruby-constant">JString</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;A Java String&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">class</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-constant">JString</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_also_java_class_can_be_given_ruby_aliases-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_also_java_class_can_be_given_ruby_aliases-method -->
+
+    
+      <div id="method-i-test_can_directly_call_java_methods_on_java_objects" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_can_directly_call_java_methods_on_java_objects</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_can_directly_call_java_methods_on_java_objects-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 47</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_can_directly_call_java_methods_on_java_objects</span>
+  <span class="ruby-identifier">java_string</span> = <span class="ruby-constant">JString</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;A Java String&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">toLowerCase</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_can_directly_call_java_methods_on_java_objects-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_can_directly_call_java_methods_on_java_objects-method -->
+
+    
+      <div id="method-i-test_however_most_methods_returning_strings_return_ruby_strings" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_however_most_methods_returning_strings_return_ruby_strings</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_however_most_methods_returning_strings_return_ruby_strings-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_however_most_methods_returning_strings_return_ruby_strings</span>
+  <span class="ruby-identifier">java_array</span> = <span class="ruby-identifier">java</span>.<span class="ruby-identifier">util</span>.<span class="ruby-constant">ArrayList</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">toString</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">toString</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">toString</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-identifier">java</span>.<span class="ruby-identifier">lang</span>.<span class="ruby-constant">String</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_however_most_methods_returning_strings_return_ruby_strings-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_however_most_methods_returning_strings_return_ruby_strings-method -->
+
+    
+      <div id="method-i-test_include_class_includes_class_in_module_scope" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_include_class_includes_class_in_module_scope</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_include_class_includes_class_in_module_scope-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_include_class_includes_class_in_module_scope</span>
+  <span class="ruby-identifier">assert_nil</span> <span class="ruby-keyword">defined?</span>(<span class="ruby-constant">TreeSet</span>)
+  <span class="ruby-identifier">include_class</span> <span class="ruby-string">&quot;java.util.TreeSet&quot;</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-keyword">defined?</span>(<span class="ruby-constant">TreeSet</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_include_class_includes_class_in_module_scope-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_include_class_includes_class_in_module_scope-method -->
+
+    
+      <div id="method-i-test_java_class_are_open_from_ruby" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_java_class_are_open_from_ruby</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_java_class_are_open_from_ruby-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 130</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_java_class_are_open_from_ruby</span>
+  <span class="ruby-identifier">java_array</span> = <span class="ruby-identifier">java</span>.<span class="ruby-identifier">util</span>.<span class="ruby-constant">ArrayList</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">add_all</span>([<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">3</span>,<span class="ruby-value">4</span>,<span class="ruby-value">5</span>])
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">multiply_all</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_java_class_are_open_from_ruby-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_java_class_are_open_from_ruby-method -->
+
+    
+      <div id="method-i-test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-constant">Java</span><span class="ruby-operator">::</span><span class="ruby-constant">JavaUtil</span><span class="ruby-operator">::</span><span class="ruby-constant">ArrayList</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">java</span>.<span class="ruby-identifier">util</span>.<span class="ruby-constant">ArrayList</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax-method -->
+
+    
+      <div id="method-i-test_java_collections_are_enumerable" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_java_collections_are_enumerable</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_java_collections_are_enumerable-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 111</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_java_collections_are_enumerable</span>
+  <span class="ruby-identifier">java_array</span> = <span class="ruby-identifier">java</span>.<span class="ruby-identifier">util</span>.<span class="ruby-constant">ArrayList</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">java_array</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;one&quot;</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;two&quot;</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;three&quot;</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">upcase</span> }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_java_collections_are_enumerable-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_java_collections_are_enumerable-method -->
+
+    
+      <div id="method-i-test_java_string_are_not_ruby_strings" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_java_string_are_not_ruby_strings</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_java_string_are_not_ruby_strings-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_java_string_are_not_ruby_strings</span>
+  <span class="ruby-identifier">ruby_string</span> = <span class="ruby-string">&quot;A Java String&quot;</span>
+  <span class="ruby-identifier">java_string</span> = <span class="ruby-identifier">java</span>.<span class="ruby-identifier">lang</span>.<span class="ruby-constant">String</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">ruby_string</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-identifier">java</span>.<span class="ruby-identifier">lang</span>.<span class="ruby-constant">String</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_java_string_are_not_ruby_strings-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_java_string_are_not_ruby_strings-method -->
+
+    
+      <div id="method-i-test_java_strings_can_be_compared_to_ruby_strings_maybe" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_java_strings_can_be_compared_to_ruby_strings_maybe</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_java_strings_can_be_compared_to_ruby_strings_maybe-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_java_strings_can_be_compared_to_ruby_strings_maybe</span>
+  <span class="ruby-identifier">ruby_string</span> = <span class="ruby-string">&quot;A Java String&quot;</span>
+  <span class="ruby-identifier">java_string</span> = <span class="ruby-identifier">java</span>.<span class="ruby-identifier">lang</span>.<span class="ruby-constant">String</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">ruby_string</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">ruby_string</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">java_string</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">ruby_string</span>
+
+  <span class="ruby-comment"># THINK ABOUT IT:</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># Is there any possible way for this to be more wrong?</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># SERIOUSLY, THINK ABOUT IT:</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># Why do you suppose that Ruby and Java strings compare like that?</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># ADVANCED THINK ABOUT IT:</span>
+  <span class="ruby-comment">#</span>
+  <span class="ruby-comment"># Is there a way to make Ruby/Java string comparisons commutative?</span>
+  <span class="ruby-comment"># How would you do it?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_java_strings_can_be_compared_to_ruby_strings_maybe-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_java_strings_can_be_compared_to_ruby_strings_maybe-method -->
+
+    
+      <div id="method-i-test_jruby_provides_question_mark_versions_of_boolean_methods" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_jruby_provides_question_mark_versions_of_boolean_methods</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_jruby_provides_question_mark_versions_of_boolean_methods-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_jruby_provides_question_mark_versions_of_boolean_methods</span>
+  <span class="ruby-identifier">java_string</span> = <span class="ruby-constant">JString</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;A Java String&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">endsWith</span>(<span class="ruby-string">&quot;String&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">ends_with</span>(<span class="ruby-string">&quot;String&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">ends_with?</span>(<span class="ruby-string">&quot;String&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_jruby_provides_question_mark_versions_of_boolean_methods-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_jruby_provides_question_mark_versions_of_boolean_methods-method -->
+
+    
+      <div id="method-i-test_jruby_provides_snake_case_versions_of_java_methods" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_jruby_provides_snake_case_versions_of_java_methods</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_jruby_provides_snake_case_versions_of_java_methods-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_jruby_provides_snake_case_versions_of_java_methods</span>
+  <span class="ruby-identifier">java_string</span> = <span class="ruby-constant">JString</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;A Java String&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_string</span>.<span class="ruby-identifier">to_lower_case</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_jruby_provides_snake_case_versions_of_java_methods-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_jruby_provides_snake_case_versions_of_java_methods-method -->
+
+    
+      <div id="method-i-test_some_ruby_objects_are_not_coerced_to_what_you_might_expect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_some_ruby_objects_are_not_coerced_to_what_you_might_expect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_some_ruby_objects_are_not_coerced_to_what_you_might_expect-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_some_ruby_objects_are_not_coerced_to_what_you_might_expect</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, [].<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Java</span><span class="ruby-operator">::</span><span class="ruby-constant">JavaUtil</span><span class="ruby-operator">::</span><span class="ruby-constant">ArrayList</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, {}.<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Java</span><span class="ruby-operator">::</span><span class="ruby-constant">JavaUtil</span><span class="ruby-operator">::</span><span class="ruby-constant">HashMap</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-constant">Object</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Java</span><span class="ruby-operator">::</span><span class="ruby-constant">JavaLang</span><span class="ruby-operator">::</span><span class="ruby-constant">Object</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_some_ruby_objects_are_not_coerced_to_what_you_might_expect-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_some_ruby_objects_are_not_coerced_to_what_you_might_expect-method -->
+
+    
+      <div id="method-i-test_some_ruby_objects_can_be_coerced_to_java" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_some_ruby_objects_can_be_coerced_to_java</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_some_ruby_objects_can_be_coerced_to_java-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 98</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_some_ruby_objects_can_be_coerced_to_java</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-string">&quot;ruby string&quot;</span>.<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-value">1</span>.<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-value">9.32</span>.<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-keyword">false</span>.<span class="ruby-identifier">to_java</span>.<span class="ruby-identifier">class</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_some_ruby_objects_can_be_coerced_to_java-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_some_ruby_objects_can_be_coerced_to_java-method -->
+
+    
+      <div id="method-i-test_using_a_java_library_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_using_a_java_library_class</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_using_a_java_library_class-source">
+            <pre><span class="ruby-comment"># File about_java_interop.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_using_a_java_library_class</span>
+  <span class="ruby-identifier">java_array</span> = <span class="ruby-identifier">java</span>.<span class="ruby-identifier">util</span>.<span class="ruby-constant">ArrayList</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">java_array</span>.<span class="ruby-identifier">class</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_using_a_java_library_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_using_a_java_library_class-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

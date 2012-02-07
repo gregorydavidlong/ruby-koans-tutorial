@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class EdgeCase::Sensei - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>edgecase.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="../Object.html">Object</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-a_zenlike_statement">#a_zenlike_statement</a>
+    
+    <li><a href="#method-i-add_progress">#add_progress</a>
+    
+    <li><a href="#method-i-artistic_end_screen">#artistic_end_screen</a>
+    
+    <li><a href="#method-i-assert_failed-3F">#assert_failed?</a>
+    
+    <li><a href="#method-i-boring_end_screen">#boring_end_screen</a>
+    
+    <li><a href="#method-i-embolden_first_line_only">#embolden_first_line_only</a>
+    
+    <li><a href="#method-i-encourage">#encourage</a>
+    
+    <li><a href="#method-i-end_screen">#end_screen</a>
+    
+    <li><a href="#method-i-failed-3F">#failed?</a>
+    
+    <li><a href="#method-i-find_interesting_lines">#find_interesting_lines</a>
+    
+    <li><a href="#method-i-guide_through_error">#guide_through_error</a>
+    
+    <li><a href="#method-i-indent">#indent</a>
+    
+    <li><a href="#method-i-instruct">#instruct</a>
+    
+    <li><a href="#method-i-observe">#observe</a>
+    
+    <li><a href="#method-i-progress">#progress</a>
+    
+    <li><a href="#method-i-show_progress">#show_progress</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../GREED_RULES_txt.html">GREED_RULES</a>
+  
+    <li class="file"><a href="../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../example_file_txt.html">example_file</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../AboutClasses.html">AboutClasses</a>
+  
+    <li><a href="../AboutClasses/Dog.html">AboutClasses::Dog</a>
+  
+    <li><a href="../AboutClasses/Dog2.html">AboutClasses::Dog2</a>
+  
+    <li><a href="../AboutClasses/Dog3.html">AboutClasses::Dog3</a>
+  
+    <li><a href="../AboutClasses/Dog4.html">AboutClasses::Dog4</a>
+  
+    <li><a href="../AboutClasses/Dog5.html">AboutClasses::Dog5</a>
+  
+    <li><a href="../AboutClasses/Dog6.html">AboutClasses::Dog6</a>
+  
+    <li><a href="../AboutClasses/Dog7.html">AboutClasses::Dog7</a>
+  
+    <li><a href="../AboutConstants.html">AboutConstants</a>
+  
+    <li><a href="../AboutConstants/Animal.html">AboutConstants::Animal</a>
+  
+    <li><a href="../AboutConstants/Animal/NestedAnimal.html">AboutConstants::Animal::NestedAnimal</a>
+  
+    <li><a href="../AboutConstants/MyAnimals.html">AboutConstants::MyAnimals</a>
+  
+    <li><a href="../AboutConstants/MyAnimals/Bird.html">AboutConstants::MyAnimals::Bird</a>
+  
+    <li><a href="../AboutConstants/MyAnimals/Oyster.html">AboutConstants::MyAnimals::Oyster</a>
+  
+    <li><a href="../AboutConstants/Reptile.html">AboutConstants::Reptile</a>
+  
+    <li><a href="../AboutScope.html">AboutScope</a>
+  
+    <li><a href="../AboutScope/Jims.html">AboutScope::Jims</a>
+  
+    <li><a href="../AboutScope/Jims/Dog.html">AboutScope::Jims::Dog</a>
+  
+    <li><a href="../AboutScope/Joes.html">AboutScope::Joes</a>
+  
+    <li><a href="../AboutScope/Joes/Dog.html">AboutScope::Joes::Dog</a>
+  
+    <li><a href="../AboutScope/String.html">AboutScope::String</a>
+  
+    <li><a href="../AboutInheritance.html">AboutInheritance</a>
+  
+    <li><a href="../AboutInheritance/BullDog.html">AboutInheritance::BullDog</a>
+  
+    <li><a href="../AboutInheritance/Chihuahua.html">AboutInheritance::Chihuahua</a>
+  
+    <li><a href="../AboutInheritance/Dog.html">AboutInheritance::Dog</a>
+  
+    <li><a href="../AboutInheritance/GreatDane.html">AboutInheritance::GreatDane</a>
+  
+    <li><a href="../AboutMessagePassing.html">AboutMessagePassing</a>
+  
+    <li><a href="../AboutMessagePassing/AllMessageCatcher.html">AboutMessagePassing::AllMessageCatcher</a>
+  
+    <li><a href="../AboutMessagePassing/MessageCatcher.html">AboutMessagePassing::MessageCatcher</a>
+  
+    <li><a href="../AboutMessagePassing/TypicalObject.html">AboutMessagePassing::TypicalObject</a>
+  
+    <li><a href="../AboutMessagePassing/WellBehavedFooCatcher.html">AboutMessagePassing::WellBehavedFooCatcher</a>
+  
+    <li><a href="../EdgeCase.html">EdgeCase</a>
+  
+    <li><a href="../EdgeCase/Color.html">EdgeCase::Color</a>
+  
+    <li><a href="../EdgeCase/Koan.html">EdgeCase::Koan</a>
+  
+    <li><a href="../EdgeCase/Sensei.html">EdgeCase::Sensei</a>
+  
+    <li><a href="../EdgeCase/ThePath.html">EdgeCase::ThePath</a>
+  
+    <li><a href="../AboutClassMethods.html">AboutClassMethods</a>
+  
+    <li><a href="../AboutClassMethods/Dog.html">AboutClassMethods::Dog</a>
+  
+    <li><a href="../AboutClassMethods/Dog2.html">AboutClassMethods::Dog2</a>
+  
+    <li><a href="../AboutClassMethods/Dog.html">AboutClassMethods::LastExpressionInClassStatement</a>
+  
+    <li><a href="../AboutJavaInterop.html">AboutJavaInterop</a>
+  
+    <li><a href="../AboutJavaInterop/Java.html">AboutJavaInterop::Java</a>
+  
+    <li><a href="../AboutJavaInterop/Java/JavaUtil.html">AboutJavaInterop::Java::JavaUtil</a>
+  
+    <li><a href="../AboutJavaInterop/Java/JavaUtil/ArrayList.html">AboutJavaInterop::Java::JavaUtil::ArrayList</a>
+  
+    <li><a href="../AboutModules.html">AboutModules</a>
+  
+    <li><a href="../AboutModules/Dog.html">AboutModules::Dog</a>
+  
+    <li><a href="../AboutModules/Nameable.html">AboutModules::Nameable</a>
+  
+    <li><a href="../AboutToStr.html">AboutToStr</a>
+  
+    <li><a href="../AboutToStr/CanBeTreatedAsString.html">AboutToStr::CanBeTreatedAsString</a>
+  
+    <li><a href="../AboutToStr/CanNotBeTreatedAsString.html">AboutToStr::CanNotBeTreatedAsString</a>
+  
+    <li><a href="../AboutExceptions.html">AboutExceptions</a>
+  
+    <li><a href="../AboutExceptions/MySpecialError.html">AboutExceptions::MySpecialError</a>
+  
+    <li><a href="../AboutMethods.html">AboutMethods</a>
+  
+    <li><a href="../AboutMethods/Dog.html">AboutMethods::Dog</a>
+  
+    <li><a href="../AboutOpenClasses.html">AboutOpenClasses</a>
+  
+    <li><a href="../AboutOpenClasses/Dog.html">AboutOpenClasses::Dog</a>
+  
+    <li><a href="../Autotest.html">Autotest</a>
+  
+    <li><a href="../Autotest/Rubykoan.html">Autotest::Rubykoan</a>
+  
+    <li><a href="../AboutArrayAssignment.html">AboutArrayAssignment</a>
+  
+    <li><a href="../AboutArrays.html">AboutArrays</a>
+  
+    <li><a href="../AboutAsserts.html">AboutAsserts</a>
+  
+    <li><a href="../AboutBlocks.html">AboutBlocks</a>
+  
+    <li><a href="../AboutControlStatements.html">AboutControlStatements</a>
+  
+    <li><a href="../AboutDiceProject.html">AboutDiceProject</a>
+  
+    <li><a href="../AboutHashes.html">AboutHashes</a>
+  
+    <li><a href="../AboutIteration.html">AboutIteration</a>
+  
+    <li><a href="../AboutNil.html">AboutNil</a>
+  
+    <li><a href="../AboutObjects.html">AboutObjects</a>
+  
+    <li><a href="../AboutProxyObjectProject.html">AboutProxyObjectProject</a>
+  
+    <li><a href="../AboutRegularExpressions.html">AboutRegularExpressions</a>
+  
+    <li><a href="../AboutSandwichCode.html">AboutSandwichCode</a>
+  
+    <li><a href="../AboutScoringProject.html">AboutScoringProject</a>
+  
+    <li><a href="../AboutStrings.html">AboutStrings</a>
+  
+    <li><a href="../AboutSymbols.html">AboutSymbols</a>
+  
+    <li><a href="../AboutTriangleProject.html">AboutTriangleProject</a>
+  
+    <li><a href="../AboutTriangleProject2.html">AboutTriangleProject2</a>
+  
+    <li><a href="../AboutTrueAndFalse.html">AboutTrueAndFalse</a>
+  
+    <li><a href="../ArrayTest.html">ArrayTest</a>
+  
+    <li><a href="../FillMeInError.html">FillMeInError</a>
+  
+    <li><a href="../Integer.html">Integer</a>
+  
+    <li><a href="../KeyError.html">KeyError</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../Proxy.html">Proxy</a>
+  
+    <li><a href="../String.html">String</a>
+  
+    <li><a href="../Television.html">Television</a>
+  
+    <li><a href="../TelevisionTest.html">TelevisionTest</a>
+  
+    <li><a href="../TestSomething.html">TestSomething</a>
+  
+    <li><a href="../TriangleError.html">TriangleError</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class EdgeCase::Sensei</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="AssertionError">AssertionError
+        
+        <dd class="description">
+        
+      
+        <dt id="PROGRESS_FILE_NAME">PROGRESS_FILE_NAME
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-failed_test" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">failed_test</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-failure" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">failure</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-pass_count" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">pass_count</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 157</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
+  <span class="ruby-ivar">@pass_count</span> = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@failure</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@failed_test</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@observations</span> = []
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-a_zenlike_statement" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">a_zenlike_statement</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Hat’s tip to Ara T. Howard for the zen statements from his metakoans Ruby
+Quiz (<a
+href="http://rubyquiz.com/quiz67.html">rubyquiz.com/quiz67.html</a>)</p>
+          
+
+          
+          <div class="method-source-code" id="a_zenlike_statement-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 345</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">a_zenlike_statement</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">failed?</span>
+    <span class="ruby-identifier">zen_statement</span> =  <span class="ruby-string">&quot;Mountains are again merely mountains&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">zen_statement</span> = <span class="ruby-keyword">case</span> (<span class="ruby-ivar">@pass_count</span> <span class="ruby-operator">%</span> <span class="ruby-value">10</span>)
+    <span class="ruby-keyword">when</span> <span class="ruby-value">0</span>
+      <span class="ruby-string">&quot;mountains are merely mountains&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">1</span>, <span class="ruby-value">2</span>
+      <span class="ruby-string">&quot;learn the rules so you know how to break them properly&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">3</span>, <span class="ruby-value">4</span>
+      <span class="ruby-string">&quot;remember that silence is sometimes the best answer&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">5</span>, <span class="ruby-value">6</span>
+      <span class="ruby-string">&quot;sleep is the best meditation&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">7</span>, <span class="ruby-value">8</span>
+      <span class="ruby-string">&quot;when you lose, don't lose the lesson&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-string">&quot;things are not what they appear to be: nor are they otherwise&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-identifier">zen_statement</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- a_zenlike_statement-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- a_zenlike_statement-method -->
+
+    
+      <div id="method-i-add_progress" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_progress</span><span
+            class="method-args">(prog)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="add_progress-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 166</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_progress</span>(<span class="ruby-identifier">prog</span>)
+  <span class="ruby-ivar">@_contents</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">exists</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-constant">PROGRESS_FILE_NAME</span>)
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-constant">PROGRESS_FILE_NAME</span>,<span class="ruby-string">'a+'</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">f</span>.<span class="ruby-identifier">print</span> <span class="ruby-node">&quot;#{',' if exists}#{prog}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_progress-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_progress-method -->
+
+    
+      <div id="method-i-artistic_end_screen" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">artistic_end_screen</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="artistic_end_screen-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 251</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">artistic_end_screen</span>
+      <span class="ruby-string">&quot;JRuby 1.9.x Koans&quot;</span>
+      <span class="ruby-identifier">ruby_version</span> = <span class="ruby-node">&quot;(in #{'J' if defined?(JRUBY_VERSION)}Ruby #{defined?(JRUBY_VERSION) ? JRUBY_VERSION : RUBY_VERSION})&quot;</span>
+      <span class="ruby-identifier">ruby_version</span> = <span class="ruby-identifier">ruby_version</span>.<span class="ruby-identifier">side_padding</span>(<span class="ruby-value">54</span>)
+        <span class="ruby-identifier">completed</span> = <span class="ruby-string">&quot;                                  ,,   ,  ,,
+                                :      ::::,    :::,
+                   ,        ,,: :::::::::::::,,  ::::   :  ,
+                 ,       ,,,   ,:::::::::::::::::::,  ,:  ,: ,,
+            :,        ::,  , , :, ,::::::::::::::::::, :::  ,::::
+           :   :    ::,                          ,:::::::: ::, ,::::
+          ,     ,:::::                                  :,:::::::,::::,
+      ,:     , ,:,,:                                       :::::::::::::
+     ::,:   ,,:::,                                           ,::::::::::::,
+    ,:::, :,,:::                                               ::::::::::::,
+   ,::: :::::::,       Mountains are again merely mountains     ,::::::::::::
+   :::,,,::::::                                                   ::::::::::::
+ ,:::::::::::,                                                    ::::::::::::,
+ :::::::::::,                                                     ,::::::::::::
+:::::::::::::                                                     ,::::::::::::
+::::::::::::                      Ruby Koans                       ::::::::::::,
+::::::::::::#{                  ruby_version                     },::::::::::::,
+:::::::::::,                                                      , ::::::::::::
+,:::::::::::::,                brought to you by                 ,,::::::::::::,
+::::::::::::::                                                    ,::::::::::::
+ ::::::::::::::,                                                 ,:::::::::::::
+ ::::::::::::,             EdgeCase Software Artisans           , ::::::::::::
+  :,::::::::: ::::                                               :::::::::::::
+   ,:::::::::::  ,:                                          ,,:::::::::::::,
+     ::::::::::::                                           ,::::::::::::::,
+      :::::::::::::::::,                                  ::::::::::::::::
+       :::::::::::::::::::,                             ::::::::::::::::
+        ::::::::::::::::::::::,                     ,::::,:, , ::::,:::
+          :::::::::::::::::::::::,               ::,: ::,::, ,,: ::::
+              ,::::::::::::::::::::              ::,,  , ,,  ,::::
+                 ,::::::::::::::::              ::,, ,   ,:::,
+                      ,::::                         , ,,
+                                                  ,,,
+&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">completed</span>
+    <span class="ruby-keyword">end</span></pre>
+          </div><!-- artistic_end_screen-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- artistic_end_screen-method -->
+
+    
+      <div id="method-i-assert_failed-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">assert_failed?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="assert_failed-3F-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 206</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">assert_failed?</span>
+  <span class="ruby-identifier">failure</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">AssertionError</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- assert_failed-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- assert_failed-3F-method -->
+
+    
+      <div id="method-i-boring_end_screen" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">boring_end_screen</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="boring_end_screen-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 247</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">boring_end_screen</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Mountains are again merely mountains&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- boring_end_screen-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- boring_end_screen-method -->
+
+    
+      <div id="method-i-embolden_first_line_only" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">embolden_first_line_only</span><span
+            class="method-args">(text)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="embolden_first_line_only-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 320</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">embolden_first_line_only</span>(<span class="ruby-identifier">text</span>)
+  <span class="ruby-identifier">first_line</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-identifier">text</span>.<span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">first_line</span>
+      <span class="ruby-identifier">first_line</span> = <span class="ruby-keyword">false</span>
+      <span class="ruby-constant">Color</span>.<span class="ruby-identifier">red</span>(<span class="ruby-identifier">t</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-identifier">t</span>)
+    <span class="ruby-keyword">end</span>
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- embolden_first_line_only-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- embolden_first_line_only-method -->
+
+    
+      <div id="method-i-encourage" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">encourage</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="encourage-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 293</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">encourage</span>
+  <span class="ruby-identifier">puts</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The Master says:&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-string">&quot;  You have not yet reached enlightenment.&quot;</span>)
+  <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">recents</span> = <span class="ruby-identifier">progress</span>.<span class="ruby-identifier">last</span>(<span class="ruby-value">5</span>)) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">recents</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">5</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">recents</span>.<span class="ruby-identifier">uniq</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>)
+    <span class="ruby-identifier">puts</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-string">&quot;  I sense frustration. Do not be afraid to ask for help.&quot;</span>)
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">progress</span>.<span class="ruby-identifier">last</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">2</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">progress</span>.<span class="ruby-identifier">last</span>(<span class="ruby-value">2</span>).<span class="ruby-identifier">uniq</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-string">&quot;  Do not lose hope.&quot;</span>)
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">progress</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-node">&quot;  You are progressing. Excellent. #{progress.last} completed.&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- encourage-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- encourage-method -->
+
+    
+      <div id="method-i-end_screen" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">end_screen</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="end_screen-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 239</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">end_screen</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">EdgeCase</span>.<span class="ruby-identifier">simple_output</span>
+    <span class="ruby-identifier">boring_end_screen</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">artistic_end_screen</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- end_screen-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- end_screen-method -->
+
+    
+      <div id="method-i-failed-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">failed?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="failed-3F-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 202</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">failed?</span>
+  <span class="ruby-operator">!</span> <span class="ruby-ivar">@failure</span>.<span class="ruby-identifier">nil?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- failed-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- failed-3F-method -->
+
+    
+      <div id="method-i-find_interesting_lines" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find_interesting_lines</span><span
+            class="method-args">(backtrace)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="find_interesting_lines-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 337</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">find_interesting_lines</span>(<span class="ruby-identifier">backtrace</span>)
+  <span class="ruby-identifier">backtrace</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">%rtest\/unit\/|edgecase\.rb|minitest/</span>
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- find_interesting_lines-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- find_interesting_lines-method -->
+
+    
+      <div id="method-i-guide_through_error" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">guide_through_error</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="guide_through_error-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 306</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">guide_through_error</span>
+  <span class="ruby-identifier">puts</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The answers you seek...&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">red</span>(<span class="ruby-identifier">indent</span>(<span class="ruby-identifier">failure</span>.<span class="ruby-identifier">message</span>).<span class="ruby-identifier">join</span>)
+  <span class="ruby-identifier">puts</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Please meditate on the following code:&quot;</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">assert_failed?</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">embolden_first_line_only</span>(<span class="ruby-identifier">indent</span>(<span class="ruby-identifier">find_interesting_lines</span>(<span class="ruby-identifier">failure</span>.<span class="ruby-identifier">backtrace</span>)))
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">embolden_first_line_only</span>(<span class="ruby-identifier">indent</span>(<span class="ruby-identifier">failure</span>.<span class="ruby-identifier">backtrace</span>))
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">puts</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- guide_through_error-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- guide_through_error-method -->
+
+    
+      <div id="method-i-indent" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">indent</span><span
+            class="method-args">(text)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="indent-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 332</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">indent</span>(<span class="ruby-identifier">text</span>)
+  <span class="ruby-identifier">text</span> = <span class="ruby-identifier">text</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">%r\n/</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">text</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+  <span class="ruby-identifier">text</span>.<span class="ruby-identifier">collect</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;  #{t}&quot;</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- indent-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- indent-method -->
+
+    
+      <div id="method-i-instruct" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">instruct</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="instruct-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 210</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">instruct</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">failed?</span>
+    <span class="ruby-ivar">@observations</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> <span class="ruby-identifier">puts</span> <span class="ruby-identifier">c</span> }
+    <span class="ruby-identifier">encourage</span>
+    <span class="ruby-identifier">guide_through_error</span>
+    <span class="ruby-identifier">a_zenlike_statement</span>
+    <span class="ruby-identifier">show_progress</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">end_screen</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- instruct-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- instruct-method -->
+
+    
+      <div id="method-i-observe" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">observe</span><span
+            class="method-args">(step)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="observe-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 187</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">observe</span>(<span class="ruby-identifier">step</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">step</span>.<span class="ruby-identifier">passed?</span>
+    <span class="ruby-ivar">@pass_count</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@pass_count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">progress</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">to_i</span>
+      <span class="ruby-ivar">@observations</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-node">&quot;#{step.koan_file}##{step.name} has expanded your awareness.&quot;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@failed_test</span> = <span class="ruby-identifier">step</span>
+    <span class="ruby-ivar">@failure</span> = <span class="ruby-identifier">step</span>.<span class="ruby-identifier">failure</span>
+    <span class="ruby-identifier">add_progress</span>(<span class="ruby-ivar">@pass_count</span>)
+    <span class="ruby-ivar">@observations</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">red</span>(<span class="ruby-node">&quot;#{step.koan_file}##{step.name} has damaged your karma.&quot;</span>)
+    <span class="ruby-identifier">throw</span> <span class="ruby-value">:edgecase_exit</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- observe-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- observe-method -->
+
+    
+      <div id="method-i-progress" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">progress</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="progress-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 174</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">progress</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@_contents</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-constant">PROGRESS_FILE_NAME</span>)
+      <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-constant">PROGRESS_FILE_NAME</span>,<span class="ruby-string">'r'</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+        <span class="ruby-ivar">@_contents</span> = <span class="ruby-identifier">f</span>.<span class="ruby-identifier">read</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%r\s/</span>,<span class="ruby-string">''</span>).<span class="ruby-identifier">split</span>(<span class="ruby-string">','</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-ivar">@_contents</span> = []
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@_contents</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- progress-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- progress-method -->
+
+    
+      <div id="method-i-show_progress" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">show_progress</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="show_progress-source">
+            <pre><span class="ruby-comment"># File edgecase.rb, line 222</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">show_progress</span>
+  <span class="ruby-identifier">bar_width</span> = <span class="ruby-value">50</span>
+  <span class="ruby-identifier">total_tests</span> = <span class="ruby-constant">EdgeCase</span><span class="ruby-operator">::</span><span class="ruby-constant">Koan</span>.<span class="ruby-identifier">total_tests</span>
+  <span class="ruby-identifier">scale</span> = <span class="ruby-identifier">bar_width</span>.<span class="ruby-identifier">to_f</span><span class="ruby-operator">/</span><span class="ruby-identifier">total_tests</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-string">&quot;your path thus far [&quot;</span>)
+  <span class="ruby-identifier">happy_steps</span> = (<span class="ruby-identifier">pass_count</span>*<span class="ruby-identifier">scale</span>).<span class="ruby-identifier">to_i</span>
+  <span class="ruby-identifier">happy_steps</span> = <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">happy_steps</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">pass_count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-string">'.'</span>*<span class="ruby-identifier">happy_steps</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">failed?</span>
+    <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">red</span>(<span class="ruby-string">'X'</span>)
+    <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">cyan</span>(<span class="ruby-string">'_'</span>*(<span class="ruby-identifier">bar_width</span><span class="ruby-operator">-</span><span class="ruby-value">1</span><span class="ruby-operator">-</span><span class="ruby-identifier">happy_steps</span>))
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">print</span> <span class="ruby-constant">Color</span>.<span class="ruby-identifier">green</span>(<span class="ruby-string">']'</span>)
+  <span class="ruby-identifier">print</span> <span class="ruby-node">&quot; #{pass_count}/#{total_tests}&quot;</span>
+  <span class="ruby-identifier">puts</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- show_progress-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- show_progress-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

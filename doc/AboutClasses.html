@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class AboutClasses - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>about_classes.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="EdgeCase/Koan.html">EdgeCase::Koan</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-test_all_objects_support_to_s_and_inspect">#test_all_objects_support_to_s_and_inspect</a>
+    
+    <li><a href="#method-i-test_args_to_new_must_match_initialize">#test_args_to_new_must_match_initialize</a>
+    
+    <li><a href="#method-i-test_attr_accessor_will_automatically_define_both_read_and_write_accessors">#test_attr_accessor_will_automatically_define_both_read_and_write_accessors</a>
+    
+    <li><a href="#method-i-test_attr_reader_will_automatically_define_an_accessor">#test_attr_reader_will_automatically_define_an_accessor</a>
+    
+    <li><a href="#method-i-test_different_objects_have_different_instance_variables">#test_different_objects_have_different_instance_variables</a>
+    
+    <li><a href="#method-i-test_initialize_provides_initial_values_for_instance_variables">#test_initialize_provides_initial_values_for_instance_variables</a>
+    
+    <li><a href="#method-i-test_inside_a_method_self_refers_to_the_containing_object">#test_inside_a_method_self_refers_to_the_containing_object</a>
+    
+    <li><a href="#method-i-test_inspect_provides_a_more_complete_string_version">#test_inspect_provides_a_more_complete_string_version</a>
+    
+    <li><a href="#method-i-test_instance_variables_can_be_set_by_assigning_to_them">#test_instance_variables_can_be_set_by_assigning_to_them</a>
+    
+    <li><a href="#method-i-test_instance_variables_cannot_be_accessed_outside_the_class">#test_instance_variables_cannot_be_accessed_outside_the_class</a>
+    
+    <li><a href="#method-i-test_instances_of_classes_can_be_created_with_new">#test_instances_of_classes_can_be_created_with_new</a>
+    
+    <li><a href="#method-i-test_to_s_is_used_in_string_interpolation">#test_to_s_is_used_in_string_interpolation</a>
+    
+    <li><a href="#method-i-test_to_s_provides_a_string_version_of_the_object">#test_to_s_provides_a_string_version_of_the_object</a>
+    
+    <li><a href="#method-i-test_you_can_create_accessor_methods_to_return_instance_variables">#test_you_can_create_accessor_methods_to_return_instance_variables</a>
+    
+    <li><a href="#method-i-test_you_can_politely_ask_for_instance_variable_values">#test_you_can_politely_ask_for_instance_variable_values</a>
+    
+    <li><a href="#method-i-test_you_can_rip_the_value_out_using_instance_eval">#test_you_can_rip_the_value_out_using_instance_eval</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./GREED_RULES_txt.html">GREED_RULES</a>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+    <li class="file"><a href="./example_file_txt.html">example_file</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./AboutClasses.html">AboutClasses</a>
+  
+    <li><a href="./AboutClasses/Dog.html">AboutClasses::Dog</a>
+  
+    <li><a href="./AboutClasses/Dog2.html">AboutClasses::Dog2</a>
+  
+    <li><a href="./AboutClasses/Dog3.html">AboutClasses::Dog3</a>
+  
+    <li><a href="./AboutClasses/Dog4.html">AboutClasses::Dog4</a>
+  
+    <li><a href="./AboutClasses/Dog5.html">AboutClasses::Dog5</a>
+  
+    <li><a href="./AboutClasses/Dog6.html">AboutClasses::Dog6</a>
+  
+    <li><a href="./AboutClasses/Dog7.html">AboutClasses::Dog7</a>
+  
+    <li><a href="./AboutConstants.html">AboutConstants</a>
+  
+    <li><a href="./AboutConstants/Animal.html">AboutConstants::Animal</a>
+  
+    <li><a href="./AboutConstants/Animal/NestedAnimal.html">AboutConstants::Animal::NestedAnimal</a>
+  
+    <li><a href="./AboutConstants/MyAnimals.html">AboutConstants::MyAnimals</a>
+  
+    <li><a href="./AboutConstants/MyAnimals/Bird.html">AboutConstants::MyAnimals::Bird</a>
+  
+    <li><a href="./AboutConstants/MyAnimals/Oyster.html">AboutConstants::MyAnimals::Oyster</a>
+  
+    <li><a href="./AboutConstants/Reptile.html">AboutConstants::Reptile</a>
+  
+    <li><a href="./AboutScope.html">AboutScope</a>
+  
+    <li><a href="./AboutScope/Jims.html">AboutScope::Jims</a>
+  
+    <li><a href="./AboutScope/Jims/Dog.html">AboutScope::Jims::Dog</a>
+  
+    <li><a href="./AboutScope/Joes.html">AboutScope::Joes</a>
+  
+    <li><a href="./AboutScope/Joes/Dog.html">AboutScope::Joes::Dog</a>
+  
+    <li><a href="./AboutScope/String.html">AboutScope::String</a>
+  
+    <li><a href="./AboutInheritance.html">AboutInheritance</a>
+  
+    <li><a href="./AboutInheritance/BullDog.html">AboutInheritance::BullDog</a>
+  
+    <li><a href="./AboutInheritance/Chihuahua.html">AboutInheritance::Chihuahua</a>
+  
+    <li><a href="./AboutInheritance/Dog.html">AboutInheritance::Dog</a>
+  
+    <li><a href="./AboutInheritance/GreatDane.html">AboutInheritance::GreatDane</a>
+  
+    <li><a href="./AboutMessagePassing.html">AboutMessagePassing</a>
+  
+    <li><a href="./AboutMessagePassing/AllMessageCatcher.html">AboutMessagePassing::AllMessageCatcher</a>
+  
+    <li><a href="./AboutMessagePassing/MessageCatcher.html">AboutMessagePassing::MessageCatcher</a>
+  
+    <li><a href="./AboutMessagePassing/TypicalObject.html">AboutMessagePassing::TypicalObject</a>
+  
+    <li><a href="./AboutMessagePassing/WellBehavedFooCatcher.html">AboutMessagePassing::WellBehavedFooCatcher</a>
+  
+    <li><a href="./EdgeCase.html">EdgeCase</a>
+  
+    <li><a href="./EdgeCase/Color.html">EdgeCase::Color</a>
+  
+    <li><a href="./EdgeCase/Koan.html">EdgeCase::Koan</a>
+  
+    <li><a href="./EdgeCase/Sensei.html">EdgeCase::Sensei</a>
+  
+    <li><a href="./EdgeCase/ThePath.html">EdgeCase::ThePath</a>
+  
+    <li><a href="./AboutClassMethods.html">AboutClassMethods</a>
+  
+    <li><a href="./AboutClassMethods/Dog.html">AboutClassMethods::Dog</a>
+  
+    <li><a href="./AboutClassMethods/Dog2.html">AboutClassMethods::Dog2</a>
+  
+    <li><a href="./AboutClassMethods/Dog.html">AboutClassMethods::LastExpressionInClassStatement</a>
+  
+    <li><a href="./AboutJavaInterop.html">AboutJavaInterop</a>
+  
+    <li><a href="./AboutJavaInterop/Java.html">AboutJavaInterop::Java</a>
+  
+    <li><a href="./AboutJavaInterop/Java/JavaUtil.html">AboutJavaInterop::Java::JavaUtil</a>
+  
+    <li><a href="./AboutJavaInterop/Java/JavaUtil/ArrayList.html">AboutJavaInterop::Java::JavaUtil::ArrayList</a>
+  
+    <li><a href="./AboutModules.html">AboutModules</a>
+  
+    <li><a href="./AboutModules/Dog.html">AboutModules::Dog</a>
+  
+    <li><a href="./AboutModules/Nameable.html">AboutModules::Nameable</a>
+  
+    <li><a href="./AboutToStr.html">AboutToStr</a>
+  
+    <li><a href="./AboutToStr/CanBeTreatedAsString.html">AboutToStr::CanBeTreatedAsString</a>
+  
+    <li><a href="./AboutToStr/CanNotBeTreatedAsString.html">AboutToStr::CanNotBeTreatedAsString</a>
+  
+    <li><a href="./AboutExceptions.html">AboutExceptions</a>
+  
+    <li><a href="./AboutExceptions/MySpecialError.html">AboutExceptions::MySpecialError</a>
+  
+    <li><a href="./AboutMethods.html">AboutMethods</a>
+  
+    <li><a href="./AboutMethods/Dog.html">AboutMethods::Dog</a>
+  
+    <li><a href="./AboutOpenClasses.html">AboutOpenClasses</a>
+  
+    <li><a href="./AboutOpenClasses/Dog.html">AboutOpenClasses::Dog</a>
+  
+    <li><a href="./Autotest.html">Autotest</a>
+  
+    <li><a href="./Autotest/Rubykoan.html">Autotest::Rubykoan</a>
+  
+    <li><a href="./AboutArrayAssignment.html">AboutArrayAssignment</a>
+  
+    <li><a href="./AboutArrays.html">AboutArrays</a>
+  
+    <li><a href="./AboutAsserts.html">AboutAsserts</a>
+  
+    <li><a href="./AboutBlocks.html">AboutBlocks</a>
+  
+    <li><a href="./AboutControlStatements.html">AboutControlStatements</a>
+  
+    <li><a href="./AboutDiceProject.html">AboutDiceProject</a>
+  
+    <li><a href="./AboutHashes.html">AboutHashes</a>
+  
+    <li><a href="./AboutIteration.html">AboutIteration</a>
+  
+    <li><a href="./AboutNil.html">AboutNil</a>
+  
+    <li><a href="./AboutObjects.html">AboutObjects</a>
+  
+    <li><a href="./AboutProxyObjectProject.html">AboutProxyObjectProject</a>
+  
+    <li><a href="./AboutRegularExpressions.html">AboutRegularExpressions</a>
+  
+    <li><a href="./AboutSandwichCode.html">AboutSandwichCode</a>
+  
+    <li><a href="./AboutScoringProject.html">AboutScoringProject</a>
+  
+    <li><a href="./AboutStrings.html">AboutStrings</a>
+  
+    <li><a href="./AboutSymbols.html">AboutSymbols</a>
+  
+    <li><a href="./AboutTriangleProject.html">AboutTriangleProject</a>
+  
+    <li><a href="./AboutTriangleProject2.html">AboutTriangleProject2</a>
+  
+    <li><a href="./AboutTrueAndFalse.html">AboutTrueAndFalse</a>
+  
+    <li><a href="./ArrayTest.html">ArrayTest</a>
+  
+    <li><a href="./FillMeInError.html">FillMeInError</a>
+  
+    <li><a href="./Integer.html">Integer</a>
+  
+    <li><a href="./KeyError.html">KeyError</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Proxy.html">Proxy</a>
+  
+    <li><a href="./String.html">String</a>
+  
+    <li><a href="./Television.html">Television</a>
+  
+    <li><a href="./TelevisionTest.html">TelevisionTest</a>
+  
+    <li><a href="./TestSomething.html">TestSomething</a>
+  
+    <li><a href="./TriangleError.html">TriangleError</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class AboutClasses</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-test_all_objects_support_to_s_and_inspect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_all_objects_support_to_s_and_inspect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_all_objects_support_to_s_and_inspect-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 180</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_all_objects_support_to_s_and_inspect</span>
+  <span class="ruby-identifier">array</span> = [<span class="ruby-value">1</span>,<span class="ruby-value">2</span>,<span class="ruby-value">3</span>]
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">array</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">array</span>.<span class="ruby-identifier">inspect</span>
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-string">&quot;STRING&quot;</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-string">&quot;STRING&quot;</span>.<span class="ruby-identifier">inspect</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_all_objects_support_to_s_and_inspect-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_all_objects_support_to_s_and_inspect-method -->
+
+    
+      <div id="method-i-test_args_to_new_must_match_initialize" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_args_to_new_must_match_initialize</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_args_to_new_must_match_initialize-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 121</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_args_to_new_must_match_initialize</span>
+  <span class="ruby-identifier">assert_raise</span>(<span class="ruby-identifier">___</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-constant">Dog6</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment"># THINK ABOUT IT:</span>
+  <span class="ruby-comment"># Why is this so?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_args_to_new_must_match_initialize-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_args_to_new_must_match_initialize-method -->
+
+    
+      <div id="method-i-test_attr_accessor_will_automatically_define_both_read_and_write_accessors" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_attr_accessor_will_automatically_define_both_read_and_write_accessors</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_attr_accessor_will_automatically_define_both_read_and_write_accessors-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 100</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_attr_accessor_will_automatically_define_both_read_and_write_accessors</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog5</span>.<span class="ruby-identifier">new</span>
+
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span> = <span class="ruby-string">&quot;Fido&quot;</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_attr_accessor_will_automatically_define_both_read_and_write_accessors-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_attr_accessor_will_automatically_define_both_read_and_write_accessors-method -->
+
+    
+      <div id="method-i-test_attr_reader_will_automatically_define_an_accessor" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_attr_reader_will_automatically_define_an_accessor</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_attr_reader_will_automatically_define_an_accessor-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 86</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_attr_reader_will_automatically_define_an_accessor</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog4</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">set_name</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_attr_reader_will_automatically_define_an_accessor-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_attr_reader_will_automatically_define_an_accessor-method -->
+
+    
+      <div id="method-i-test_different_objects_have_different_instance_variables" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_different_objects_have_different_instance_variables</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_different_objects_have_different_instance_variables-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 129</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_different_objects_have_different_instance_variables</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog6</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+  <span class="ruby-identifier">rover</span> = <span class="ruby-constant">Dog6</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Rover&quot;</span>)
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">rover</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_different_objects_have_different_instance_variables-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_different_objects_have_different_instance_variables-method -->
+
+    
+      <div id="method-i-test_initialize_provides_initial_values_for_instance_variables" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_initialize_provides_initial_values_for_instance_variables</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_initialize_provides_initial_values_for_instance_variables-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 116</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_initialize_provides_initial_values_for_instance_variables</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog6</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_initialize_provides_initial_values_for_instance_variables-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_initialize_provides_initial_values_for_instance_variables-method -->
+
+    
+      <div id="method-i-test_inside_a_method_self_refers_to_the_containing_object" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_inside_a_method_self_refers_to_the_containing_object</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_inside_a_method_self_refers_to_the_containing_object-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 158</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_inside_a_method_self_refers_to_the_containing_object</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog7</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+
+  <span class="ruby-identifier">fidos_self</span> = <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">get_self</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fidos_self</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_inside_a_method_self_refers_to_the_containing_object-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_inside_a_method_self_refers_to_the_containing_object-method -->
+
+    
+      <div id="method-i-test_inspect_provides_a_more_complete_string_version" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_inspect_provides_a_more_complete_string_version</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_inspect_provides_a_more_complete_string_version-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 175</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_inspect_provides_a_more_complete_string_version</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog7</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">inspect</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_inspect_provides_a_more_complete_string_version-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_inspect_provides_a_more_complete_string_version-method -->
+
+    
+      <div id="method-i-test_instance_variables_can_be_set_by_assigning_to_them" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_instance_variables_can_be_set_by_assigning_to_them</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_instance_variables_can_be_set_by_assigning_to_them-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_instance_variables_can_be_set_by_assigning_to_them</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog2</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">instance_variables</span>
+
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">set_name</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">instance_variables</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_instance_variables_can_be_set_by_assigning_to_them-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_instance_variables_can_be_set_by_assigning_to_them-method -->
+
+    
+      <div id="method-i-test_instance_variables_cannot_be_accessed_outside_the_class" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_instance_variables_cannot_be_accessed_outside_the_class</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_instance_variables_cannot_be_accessed_outside_the_class-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_instance_variables_cannot_be_accessed_outside_the_class</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog2</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">set_name</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+
+  <span class="ruby-identifier">assert_raise</span>(<span class="ruby-identifier">___</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">assert_raise</span>(<span class="ruby-identifier">___</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">eval</span> <span class="ruby-string">&quot;fido.@name&quot;</span>
+    <span class="ruby-comment"># NOTE: Using eval because the above line is a syntax error.</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_instance_variables_cannot_be_accessed_outside_the_class-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_instance_variables_cannot_be_accessed_outside_the_class-method -->
+
+    
+      <div id="method-i-test_instances_of_classes_can_be_created_with_new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_instances_of_classes_can_be_created_with_new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_instances_of_classes_can_be_created_with_new-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_instances_of_classes_can_be_created_with_new</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">class</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_instances_of_classes_can_be_created_with_new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_instances_of_classes_can_be_created_with_new-method -->
+
+    
+      <div id="method-i-test_to_s_is_used_in_string_interpolation" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_s_is_used_in_string_interpolation</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_to_s_is_used_in_string_interpolation-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 170</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_to_s_is_used_in_string_interpolation</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog7</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-node">&quot;My dog is #{fido}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_to_s_is_used_in_string_interpolation-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_to_s_is_used_in_string_interpolation-method -->
+
+    
+      <div id="method-i-test_to_s_provides_a_string_version_of_the_object" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_s_provides_a_string_version_of_the_object</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_to_s_provides_a_string_version_of_the_object-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 165</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_to_s_provides_a_string_version_of_the_object</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog7</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_to_s_provides_a_string_version_of_the_object-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_to_s_provides_a_string_version_of_the_object-method -->
+
+    
+      <div id="method-i-test_you_can_create_accessor_methods_to_return_instance_variables" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_you_can_create_accessor_methods_to_return_instance_variables</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_you_can_create_accessor_methods_to_return_instance_variables-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_you_can_create_accessor_methods_to_return_instance_variables</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog3</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">set_name</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_you_can_create_accessor_methods_to_return_instance_variables-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_you_can_create_accessor_methods_to_return_instance_variables-method -->
+
+    
+      <div id="method-i-test_you_can_politely_ask_for_instance_variable_values" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_you_can_politely_ask_for_instance_variable_values</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_you_can_politely_ask_for_instance_variable_values-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_you_can_politely_ask_for_instance_variable_values</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog2</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">set_name</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">instance_variable_get</span>(<span class="ruby-string">&quot;@name&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_you_can_politely_ask_for_instance_variable_values-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_you_can_politely_ask_for_instance_variable_values-method -->
+
+    
+      <div id="method-i-test_you_can_rip_the_value_out_using_instance_eval" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_you_can_rip_the_value_out_using_instance_eval</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_you_can_rip_the_value_out_using_instance_eval-source">
+            <pre><span class="ruby-comment"># File about_classes.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_you_can_rip_the_value_out_using_instance_eval</span>
+  <span class="ruby-identifier">fido</span> = <span class="ruby-constant">Dog2</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">set_name</span>(<span class="ruby-string">&quot;Fido&quot;</span>)
+
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">instance_eval</span>(<span class="ruby-string">&quot;@name&quot;</span>)  <span class="ruby-comment"># string version</span>
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-identifier">__</span>, <span class="ruby-identifier">fido</span>.<span class="ruby-identifier">instance_eval</span> { <span class="ruby-ivar">@name</span> } <span class="ruby-comment"># block version</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_you_can_rip_the_value_out_using_instance_eval-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_you_can_rip_the_value_out_using_instance_eval-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
